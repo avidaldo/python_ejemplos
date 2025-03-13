@@ -1,6 +1,7 @@
 """
 Diferentes implementaciones del cálculo de potencia usando bucles.
 Cada función implementa el mismo comportamiento: calcula base^exponente sin usar el operador **.
+Aviso: se implementa cada ejemplo en una función distinta (no hemos visto aún como definir funciones)
 """
 
 # ---------------------------- SIN USAR abs() ----------------------------

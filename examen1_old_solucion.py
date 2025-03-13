@@ -51,11 +51,25 @@ while True:
         elementos_correctos = []
         elementos_incorrectos = []
         
-        for i in range(len(lista1)):
+        # for i in range(len(lista1)):
+        #     if lista1[i] ** 2 == lista2[i]:
+        #         elementos_correctos.append(i)
+        #     else:
+        #         elementos_incorrectos.append(i)
+        
+        for i, valor in enumerate(lista1):
+            if valor ** 2 == lista2[i]:
+                elementos_correctos.append(i)
+            else:
+                elementos_incorrectos.append(i)
+                
+        for i, _ in enumerate(lista1):
             if lista1[i] ** 2 == lista2[i]:
                 elementos_correctos.append(i)
             else:
                 elementos_incorrectos.append(i)
+                
+        
         
         # Mostrar resultados
         print(f"Lista 1: {lista1}")
