@@ -7,9 +7,8 @@ El programa permitirá gestionar las notas de múltiples alumnos, incorporando f
 El programa presentará un menú con las siguientes opciones:
 
 1. **Añadir alumno (NIF/NIE y Nombre)**
-2. **Introducir o modificar notas**
-3. **Calcular nota final**
-4. **Generar informe**
+2. **Introducir notas**
+3. **Generar informe**
 5. **Salir**
 
 ---
@@ -25,8 +24,8 @@ El programa presentará un menú con las siguientes opciones:
 - **Validaciones:**
   - Se verificará que el formato sea correcto (posiciones de letras y números) y que la letra de control sea válida según el algoritmo de verificación del NIF/NIE.
   - Se permitirá introducir el NIF/NIE con letras en mayúsculas o minúsculas.
-  - Si el formato es incorrecto, se volverá a pedir hasta que sea válido o se introduzca 5 veces erroneamente.
-  - No se podrá introducir un NIF/NIE ya existente.
+  - Si el formato es incorrecto, **se volverá a pedir hasta que sea válido o se introduzca 5 veces erroneamente**.
+  - **No se podrá introducir un NIF/NIE ya existente.**
 - Una vez introducido, el alumno se registrará en el sistema sin notas asignadas inicialmente.
 
 ### 2. Introducir o modificar notas
@@ -36,15 +35,13 @@ El programa presentará un menú con las siguientes opciones:
 - **Validaciones:**
   - Cada nota será un número con 2 decimales, entre **0,00 y 10,00**.
   - Se verificarán que se hayan introducido exactamente 3 valores.
-  - Si algún valor es incorrecto o está fuera de rango, se pedirá que se introduzcan nuevamente, indicando cuál es el valor erroneo.
+  - Si algún valor es incorrecto o está fuera de rango, se pedirá que se introduzcan nuevamente, **indicando cuál es el valor erroneo**.
 
-### 3. Calcular nota final
+### 3. Generar informe
 
 - La nota final se calculará con la siguiente media ponderada:
 
-  \[
-  \text{NotaFinal} = (P1 \times 0.3) + (P2 \times 0.4) + (P3 \times 0.3)
-  \]
+$$ \text{Media Ponderada} = (P1 \times 0.3) + (P2 \times 0.4) + (P3 \times 0.3) $$
 
 - **Condiciones especiales:**
 
@@ -52,8 +49,6 @@ El programa presentará un menú con las siguientes opciones:
   - Si la media ponderada es menor que 4, la nota final será la media ponderada.
   - Si la media ponderada es mayor o igual que 4 pero `P2` o `P3` es inferior a 3, la nota final se limitará a **4,00**.
   - Si la nota final es **mayor o igual que 5,00**, el resultado será **APROBADO**, en caso contrario será **SUSPENSO**.
-
-### 4. Generar informe
 
 El informe incluirá los siguientes datos:
 
