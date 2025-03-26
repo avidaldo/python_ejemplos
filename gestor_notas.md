@@ -6,7 +6,7 @@ El programa permitirá gestionar las notas de múltiples alumnos, incorporando f
 
 El programa presentará un menú con las siguientes opciones:
 
-1. **Añadir alumno (NIF/NIE y Nombre)**
+1. **Añadir alumno**
 2. **Introducir notas**
 3. **Generar informe**
 5. **Salir**
