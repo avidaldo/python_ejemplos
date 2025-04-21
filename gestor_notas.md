@@ -9,7 +9,7 @@ El programa presentará un menú con las siguientes opciones:
 1. **Añadir alumno**
 2. **Introducir notas**
 3. **Generar informe**
-5. **Salir**
+4. **Salir**
 
 ---
 
