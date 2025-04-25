@@ -4,4 +4,8 @@
 
 ## Externos
 
+- [Curso de programación con Python](https://edube.org/study/pe1)
+
+## Ejemplos de aplicaciones de Python
+
 - [PythonForMechanicalEngineering](https://github.com/vishwesh5/PythonForMechanicalEngineering)
